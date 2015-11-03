@@ -1,6 +1,9 @@
 # Alfred @ Home
 
 Alfred is a personal project I started a year ago. The first idea was "How rethink the New Tab page to be really useful ?". And after a year of experimentations, few elements stay and growth.
+
+/!\ Perfectly adapt for a 13" MacBook Pro, not really for the other screens /!\
+
 ![Alfred Dashboard](http://labs.alexandrenicol.com/host/Alfred.jpg)
 
 ###The Dashboard
