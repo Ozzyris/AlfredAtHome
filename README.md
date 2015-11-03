@@ -6,12 +6,13 @@ Alfred is a personal project I started a year ago. The first idea was "How rethi
 
 ![Alfred Dashboard](http://labs.alexandrenicol.com/host/Alfred.jpg)
 
-###The Dashboard
+The Dashboard
+-------
   The next big labor of this project. With the simple idea get a summary of my life by aggregating datas. Quantify Self from Withing and place I've visited form Instagram.
   `Work In Proress`
 
--------------
-###Série's Digest
+Série's Digest
+-------
   Série is my way to answer my question of "Which of these episodes I've already watched ?". It's a simple and easy to use manager of series.
   `Work In Progress`
   
@@ -28,23 +29,23 @@ Alfred is a personal project I started a year ago. The first idea was "How rethi
   - [ ] Create a better organization of the series (New Episode first, active series, then next series active, and hide the others series).
   - [ ] Integrate IMDb to update automatically the episodes.
 
--------------
-###New's Digest
+New's Digest
+-------
   Based on the idea of Yahoo New's digest the idea of news digest is to inform me in real time about the most important international news.
   `Empty`
 
--------------
-###Imgur
+Imgur
+-------
   Maybe not the most useful, but certainly the most use, It's basically the 20 most rated pictures of Imgur in the same place. By this way I'm avoiding spending hours on Imgur, watching all the pictures.
   `Done`
 
--------------
-###FoodStorm
+FoodStorm
+-------
   Just a way for me to manage my shopping list when I'm going to do some shopping
   `Work In Progress`
 
--------------
-###Snippator
+Snippator
+-------
   Finally a way to organize my snippet in order to don't look at all my old project when I don't remember something.
   `Empty`
   
