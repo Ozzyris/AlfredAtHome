@@ -47,3 +47,8 @@ Alfred is a personal project I started a year ago. The first idea was "How rethi
 ###Snippator
   Finally a way to organize my snippet in order to don't look at all my old project when I don't remember something.
   `Empty`
+  
+  
+License
+-------
+[MIT](http://firebase.mit-license.org).
