@@ -1,0 +1,560 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ body{
+	background-color: #262626;
+	font-family: 'Roboto Slab', helvetica, sans-serif;
+	-webkit-user-select: none;
+	position:absolute;
+	left:0; top:0; bottom:0;
+	right:5px;
+	font-size: 14px;
+	line-height: 1.42857;
+	margin:0;
+}
+
+#toolbar{
+	position:absolute;
+	left:0;
+	right:-5px;
+	top:0;
+	height: 20px;
+	background-color: #383838;
+}
+
+#toolbar p{
+	float:left;
+	margin:3px 0 0 45%;
+	color: #F2F2F2;
+	font-size:12px;
+}
+
+#leftbar{
+	background-color: #191919;
+	position: absolute;
+	top:20px;
+	bottom:0;
+	left:0;
+	width:170px;
+}
+
+#leftbar ul{
+margin:0; padding:0;
+}
+
+#leftbar ul li{
+	list-style-type: none;
+	width:165px;
+	margin: 3px 0;
+	height:30px;
+	background-color: #212121;
+	display:block;
+}
+	#leftbar ul li:nth-child(1){
+		margin-top:50px;
+	}
+
+
+#leftbar ul li a{
+	width:170px;
+	height:30px;
+	text-decoration:none;
+	color: #F2F2F2;
+	position:relative;
+	display: block;
+	padding: 5px 0 0 15px;
+}
+
+.badge{
+	position:absolute;
+	right:10px;
+	top:5px;
+	background-color: #FC6E51;
+	font-size:12px;
+	-webkit-font-smoothing: antialiased;
+}
+
+#btnDashboard{ border-right: solid 5px indianred;}
+#btnSerie{ border-right: solid 5px #F6BB42;}
+#btnNews{ border-right: solid 5px #5735AA;}
+#btnImgur{ border-right: solid 5px #85BF25;}
+#btnFoodStorm{ border-right: solid 5px #3A5795;}
+#btnSnipp{ border-right: solid 5px #F08EB0;}
+
+#btnDashboard.active{ background-color: indianred; }
+#btnSerie.active{ background-color: #F6BB42; }
+#btnNews.active{ background-color: #5735AA; }
+#btnImgur.active{ background-color: #85BF25; }
+#btnFoodStorm.active{ background-color: #3A5795; }
+#btnSnipp.active{ background-color: #F08EB0; }
+
+#btnDashboard:hover{ background-color: indianred; }
+#btnSerie:hover{ background-color: #F6BB42; }
+#btnNews:hover{ background-color: #5735AA; }
+#btnImgur:hover{ background-color: #85BF25; }
+#btnFoodStorm:hover{ background-color: #3A5795; }
+#btnSnipp:hover{ background-color: #F08EB0; }
+
+.content{
+	position:absolute;
+	top:23px;
+	bottom:3px;
+	left:170px;
+	right:0;
+	overflow: auto;
+	font-size:12px;
+	-webkit-font-smoothing: antialiased;
+	color: #F2F2F2;
+}
+
+#contentKickass ul li{
+	margin:18px;
+	list-style-type: none;
+	width: 170px;
+	height: 302px;
+	float:left;
+
+}
+
+#contentKickass ul li h3{
+	font-size: 14px;
+}
+
+
+/*IMGUR*/
+#contentImgur ul li{
+	list-style-type: none;
+	width: 20%;
+	float:left;
+	display: block;
+	clear: both;
+}
+
+#contentImgur ul li h3{
+	display:none;
+}
+#feedEkList{
+	padding-left: 40px;
+}
+#feedEkList .item{
+	width:30%;
+	padding-top: 30px;
+}
+.thumbnail {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.42857;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.thumbnail > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*DASHBOARD*/
+#messageContentChat{
+	width:900px;
+}
+
+.messgageContent {
+    width: 600px;
+    height: auto;
+    margin: 10px 70px;
+    float: left;
+}
+.messsagedeAlex {
+    float: right;
+    text-align: right;
+}
+.messsagedeAlfred {
+    float: left;
+    text-align: left;
+}
+.messageDate {
+    width: 100%;
+    color: #CECECE;
+    border-top: 2px solid #CECECE;
+    font-size: 11px;
+}
+.messagetext{
+	margin:10px 0 0 10px;
+}
+	.imgAlfred{
+		width:60px;
+		float:left;
+		padding:0 5px 0 0;
+	}
+	.imgAlex{
+		width:60px;
+		float:right;
+		padding:0 0 0 5px;
+	}
+#messageChat{
+	position: fixed;
+	right:30px;
+	bottom:30px;
+	width:300px;
+	height:160px;
+	border-radius: 5px;
+	background-color: indianred;
+}
+	#messageChat #inputMessage{
+		resize:none;
+		border: none;
+		width: 290px;
+		margin:5px;
+		height: 150px;
+		background-color: #F2F2F2;
+		border-radius: 5px;
+		padding:5px;
+	}
+
+
+/*SERIES*/
+#SeriesContaineurs{
+	padding-left: 90px;
+}
+	#SeriesContaineurs .item{
+		background-color: #f2f2f2;
+		border-radius: 5px;
+		margin-top: 20px;
+		padding: 5px;
+		width: 40%;
+	}
+		#SeriesContaineurs .cover{
+			width:100%;
+			max-width:100%;
+		}
+		#SeriesContaineurs .item h4{
+			text-align: center;
+		}
+		#SeriesContaineurs .finit{
+			background-color: #C1C1C1;
+		}
+
+#SeriesContaineurs h3{
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height:1.1;
+	font-family: "Roboto Slab",helvetica,sans-serif;
+	color: #262626;
+}
+
+#SeriesContaineurs table{
+	border-spacing: 0px;
+	color: #303030;
+	width:95%;
+	margin:20px 0 0 20px;
+	padding-bottom: 20px;
+}
+
+	#SeriesContaineurs table tr{
+		height:25px;
+		width: 550px;
+	}
+
+	#SeriesContaineurs table tr.sortis{
+		color: #C1C1C1;
+	}
+
+	#SeriesContaineurs table tr.new{
+		color: #F6BB42;
+		font-weight: 700;
+	}
+
+	.cogbutton{
+		width:15px;
+		height: 15px;
+		position: absolute;
+		margin-top:165px;
+		right: 10px;
+		cursor: pointer;
+	}
+
+	.buttonVu{
+		position: static;
+		float: right;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: #F6BB42;
+		border: 2px solid #FFCF7B;
+		cursor: pointer;
+	}
+
+	.buttonVu.active{
+		background-color: #353535;
+		border: 2px solid #DDDBDB;
+	}
+
+.formaddserie, .formaddepisode{
+	padding:0;
+	margin:0;
+	width:500px;
+	margin:40px;
+}
+.formaddserie input, .formaddserie select {
+	width: 500px;
+	margin: 5px 0;
+	display: block;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.formaddepisode #addDateEpisode, #addNomEpisode{
+	width: 240px;
+	float:left;
+	display: block;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.formaddepisode #addNomEpisode{
+	margin-left: 20px;
+}
+
+.formaddepisode .btn{
+	margin: 10px 0 0 440px;
+}
+
+.modificationButton{
+	z-index:1000;
+}
+
+
+/*FOODSTORM*/
+#contentDashboard h1 {
+	width:100%;
+	text-align:center;
+	margin-top: 15%;
+}
+
+#contentFoodStorm ul{
+	padding-top: 100px;
+
+}
+
+#contentFoodStorm .FoodStormDay {
+	margin-left: 10px;
+	width: 135px;
+	background-color: #F2F2F2;
+	text-align: center;
+	border-radius: 3px;
+	height: 400px;
+	list-style-type: none;
+	float:left;
+}
+
+#HeureofDay{
+	background-color: #c7666c;
+	height:2px;
+	width:143px;
+	position: absolute;
+	top: 100px;
+	left: 41px;
+}
+
+.disabled {
+	opacity: .1;
+}
+
+#contentFoodStorm .FoodStormDay h3{
+	margin-top: 5px;
+	font-size: 14px;
+	color: #262626;
+}
+
+#MealDisponible {
+    position: fixed;
+    width: 170px;
+    height: 87px;
+    bottom: 14px;
+    left: 217px;
+}
+.label {
+    display: inline-table;
+    padding: 0.2em 0.6em 0.3em;
+    background-color: #C7666C;
+    font-size: 11px;
+    cursor:grab;
+    line-height: 1;
+    color: #FFF;
+    margin: 3px 3px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+
+.addBtn{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	width: 40px;
+	height: 40px;
+	background-color: #c7666c;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #f2f2f2;
+	transition: background-color .5s;
+}
+
+#inputMeal{
+	position: absolute;
+	bottom: 55px;
+	right: 100px;
+}
+
+.addBtn:hover{
+	transition: background-color .5s;
+	background-color: #fc838f;
+}
+
+.addBtn p {
+	position: absolute;
+	top:-50px; left:23%;
+	color: #f2f2f2;
+	font-size: 40px;
+}
+
+
+
+
+
+/* Bootstrp modal */
+.fade.in {
+    opacity: 1;
+}
+.modal {
+    position: fixed;
+    margin-top:0px;
+    top: 20%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1040;
+    display: none;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+
+.modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+}
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out 0s;
+}
+.modal-dialog {
+    right: auto;
+    left: 50%;
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 1050;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal-content {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0px none;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+}
+
+.modal-header {
+	font-size: 18px;
+	padding: 5px 15px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-footer {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #E5E5E5;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+button.close {
+    padding: 0px;
+    cursor: pointer;
+    background: none repeat scroll 0% 0% transparent;
+    border: 0px none;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0px 1px 0px #FFF;
+    opacity: 0.2;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #FFF;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    -moz-user-select: none;
+}
+.modal-footer .btn + .btn {
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.btn-primary {
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #357EBD;
+}

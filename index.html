@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- CSS -->
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="toolbar">
+         <p>Hello Mr Nicol, Enjoy this new day</p>
+    </div>
+    
+    <div id="leftbar">
+    <img src="img/Logo.svg" alt="Alfred" style="width:130px; Padding:35px 0 0 35px;">
+      <ul>
+        <li><a id="btnDashboard" href="#" class="active" title="Dashboard" >Dashboard</a></li>
+        <li><a id="btnSerie" href="pages/series.html" title="Série's Digest" >Série's Digest</a></li>
+        <li><a id="btnNews" href="pages/news.html" title="New's Digest" >New's Digest</a></li>
+        <li><a id="btnImgur" href="pages/imgur.html" title="Imgur" >Imgur</a></li>
+        <li><a id="btnFoodStorm" href="pages/foodstorm.html" title="FoodStorm" >FoodStorm</a></li>
+        <li><a id="btnSnipp" href="pages/snippator.html" title="Snippator" >Snippator</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div id="messageContentChat">
+        </div>
+        <div id="messageChat">
+            <textarea type="text" id="inputMessage" placeholder="What can I do for you Sir ?"></textarea>
+        </div>
+    </div>
+    <pre></pre>
+
+
+    <!-- Script -->
+    <script src="js/jQuery.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="js/clientchat.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

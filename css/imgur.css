@@ -1,0 +1,207 @@
+/* FONTS */
+@font-face { 
+    font-family: 'RobotosLabBold'; 
+    src: url('../fonts/robotosLabBold.eot'); 
+    src: url('../fonts/robotosLabBold?#iefix') format('embedded-opentype'), 
+         url('../fonts/robotosLabBold.woff') format('woff'), 
+         url('../fonts/robotosLabBold.ttf') format('truetype'), 
+         url('../fonts/robotosLabBold.svg#robotosLabBold') format('svg'); 
+    font-style: normal; 
+    font-weight: 700;
+}
+
+@font-face { 
+    font-family: 'robotosLabLight'; 
+    src: url('../fonts/robotosLabLight.eot'); 
+    src: url('../fonts/robotosLabLight?#iefix') format('embedded-opentype'), 
+         url('../fonts/robotosLabLight.woff') format('woff'), 
+         url('../fonts/robotosLabLight.ttf') format('truetype'), 
+         url('../fonts/robotosLabLight.svg#robotosLabLight') format('svg'); 
+    font-style: normal;
+    font-weight: 100;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ body{
+	background-color: #262626;
+	font-family: 'Roboto Slab', helvetica, sans-serif;
+	-webkit-user-select: none;
+	position:absolute;
+	left:0; top:0; bottom:0;
+	right:5px;
+	font-size: 14px;
+	line-height: 1.42857;
+	margin:0;
+}
+
+#toolbar{
+	position:absolute;
+	left:0;
+	right:-5px;
+	top:0;
+	height: 20px;
+	background-color: #383838;
+}
+
+#toolbar p{
+	float:left;
+	margin:3px 0 0 45%;
+	color: #F2F2F2;
+	font-size:12px;
+}
+
+#leftbar{
+	background-color: #191919;
+	position: absolute;
+	top:20px;
+	bottom:0;
+	left:0;
+	width:170px;
+}
+
+#leftbar ul{
+margin:0; padding:0;
+}
+
+#leftbar ul li{
+	list-style-type: none;
+	width:165px;
+	margin: 3px 0;
+	height:30px;
+	background-color: #212121;
+	display:block;
+}
+	#leftbar ul li:nth-child(1){
+		margin-top:50px;
+	}
+
+
+#leftbar ul li a{
+	width:170px;
+	height:30px;
+	text-decoration:none;
+	color: #F2F2F2;
+	position:relative;
+	display: block;
+	padding: 5px 0 0 15px;
+}
+
+.badge{
+	position:absolute;
+	right:10px;
+	top:5px;
+	background-color: #FC6E51;
+	font-size:12px;
+	-webkit-font-smoothing: antialiased;
+}
+
+#btnDashboard{ border-right: solid 5px indianred;}
+#btnSerie{ border-right: solid 5px #F6BB42;}
+#btnNews{ border-right: solid 5px #5735AA;}
+#btnImgur{ border-right: solid 5px #85BF25;}
+#btnFoodStorm{ border-right: solid 5px #3A5795;}
+#btnSnipp{ border-right: solid 5px #F08EB0;}
+
+#btnDashboard.active{ background-color: indianred; }
+#btnSerie.active{ background-color: #F6BB42; }
+#btnNews.active{ background-color: #5735AA; }
+#btnImgur.active{ background-color: #85BF25; }
+#btnFoodStorm.active{ background-color: #3A5795; }
+#btnSnipp.active{ background-color: #F08EB0; }
+
+#btnDashboard:hover{ background-color: indianred; }
+#btnSerie:hover{ background-color: #F6BB42; }
+#btnNews:hover{ background-color: #5735AA; }
+#btnImgur:hover{ background-color: #85BF25; }
+#btnFoodStorm:hover{ background-color: #3A5795; }
+#btnSnipp:hover{ background-color: #F08EB0; }
+
+#contentImgur{
+	position:absolute;
+	padding-top:27px;
+	top:23px;
+	bottom:3px;
+	left:170px;
+	right:30px;
+	overflow: auto;
+	font-size:12px;
+	-webkit-font-smoothing: antialiased;
+	color: #F2F2F2;
+}
+
+#feedEkList{
+	width:100%;
+    position: relative;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    font-size: 14pxem;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+}
+
+
+/*IMGUR*/
+#contentImgur ul li{
+	list-style-type: none;
+	width: 20%;
+	float:left;
+	display: block;
+	clear: both;
+}
+
+#contentImgur ul li h3{
+
+}
+
+#feedEkList{
+	padding-left: 40px;
+}
+#feedEkList .item{
+        position: relative;
+        display: inline-block;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        margin: 0 0 1.5em;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+}
+
+#feedEkList .item h3{
+	color:#303030;
+	text-align:center;
+	margin:0; 
+	padding: 0 10px 10px 10px;
+}
+
+.thumbnail { 
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.thumbnail > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

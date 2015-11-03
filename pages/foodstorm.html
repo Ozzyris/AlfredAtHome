@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- CSS -->
+    <link href="../css/app.css" rel="stylesheet" class="Stylesheetapp">
+  </head>
+  <body>
+    <div id="toolbar">
+         <p>Hello Mr Nicol, Here your Food</p>
+    </div>
+
+    <div id="leftbar">
+      <img src="../img/Logo.svg" alt="Alfred" style="width:130px; Padding:35px 0 0 35px; vertical-align: middle;">
+
+      <ul>
+        <li><a id="btnDashboard" href="../index.html" title="Dashboard" >Dashboard</a></li>
+        <li><a id="btnSerie" href="series.html" title="Série's Digest" >Série's Digest</a></li>
+        <li><a id="btnNews" href="news.html" title="New's Digest" >New's Digest</a></li>
+        <li><a id="btnImgur" href="imgur.html" title="Imgur" >Imgur</a></li>
+        <li><a id="btnFoodStorm" href="#" title="FoodStorm" class="active" >FoodStorm</a></li>
+        <li><a id="btnSnipp" href="snippator.html" title="Snippator" >Snippator</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="contentFoodStorm">
+          <ul>
+              <li class="FoodStormDay">
+                <h3>Monday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Tuesday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Wednesday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Thursday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Friday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Saturday</h3>
+              </li>
+              <li class="FoodStormDay">
+                <h3>Sunday</h3>
+              </li>
+          </ul>
+
+          <div id="MealDisponible">
+          </div>
+
+          <div id="HeureofDay"></div>
+          <input type="text" id="inputMeal" placeholder="Menu's Name" />
+          <div class="addBtn"><p>+</p></div>
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="../js/jQuery.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="../js/foodstorm.js"></script>
+  </body>
+</html>

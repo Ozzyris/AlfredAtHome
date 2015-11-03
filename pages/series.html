@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- CSS -->
+    <link href="../css/serie.css" rel="stylesheet" class="Stylesheetapp">
+  </head>
+  <body>
+    <div id="toolbar">
+         <p>Hello Mr Nicol, Here your Series</p>
+    </div>
+
+    <div id="leftbar">
+      <img src="../img/Logo.svg" alt="Alfred" style="width:130px; Padding:35px 0 0 35px;">
+
+      <ul>
+        <li><a id="btnDashboard" href="../index.html" title="Dashboard" >Dashboard</a></li>
+        <li><a id="btnSerie" href="#" title="Série's Digest" class="active" >Série's Digest</a></li>
+        <li><a id="btnNews" href="news.html" title="New's Digest" >New's Digest</a></li>
+        <li><a id="btnImgur" href="imgur.html" title="Imgur" >Imgur</a></li>
+        <li><a id="btnFoodStorm" href="foodstorm.html" title="FoodStorm" >FoodStorm</a></li>
+        <li><a id="btnSnipp" href="snippator.html" title="Snippator" >Snippator</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div id="SeriesContaineurs">
+
+  
+      </div>
+    </div>
+
+    <div class="addBtn"><p>+</p></div>
+
+
+    <div class="modal fade" id="AddSerieModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" >Add a New Serie Bro !</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="formaddserie">
+                        <input type="hidden" id="addserieId">
+                        <input type="hidden" id="addepisodeKey">
+                        <input type="hidden" id="addserieKey">
+                        <input type="text" id="addserieNom" placeholder="Nom de la Série">
+                        <input type="text" id="addserieSaison" placeholder="N°de saison">
+                        <select id="addserieStatus" name="nom" size="1">
+                            <option value="encours" >encours</option>
+                            <option value="finit" >finit</option>
+                        </select>
+                        <input type="text" id="addserieImage" placeholder="Image">
+                        <input type="text" id="addserieLien" placeholder="lien">
+                    </form>
+                    <form class="formaddepisode" action="">
+                        <h2>Episode 1</h2>
+                        <input id="addDateEpisode" type="text" placeholder="Date de Sortis (16/07/2015)" >
+                        <input id="addNomEpisode" type="text" placeholder="Nom de l'épisode">
+                        <a class="btn btn-primary" id="buttonNext" >Next</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Kill me :-(</button>
+                    <button type="button" data-role="new" id="btnaddserie" class="btn btn-primary">Add me :-)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="../js/jQuery.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="../js/modal.js"></script>
+    <!--<script src="../js/timer.js"></script>-->
+    <script src="../js/series.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- CSS -->
+    <link href="../css/imgur.css" rel="stylesheet" class="Stylesheetapp">
+  </head>
+  <body>
+    <div id="toolbar">
+         <p>Hello Mr Nicol, Here some Fun</p>
+    </div>
+
+    <div id="leftbar">
+      <img src="../img/Logo.svg" alt="Alfred" style="width:130px; Padding:35px 0 0 35px;">
+
+      <ul>
+        <li><a id="btnDashboard" href="../index.html" title="Dashboard" >Dashboard</a></li>
+        <li><a id="btnSerie" href="series.html" title="Série's Digest" >Série's Digest</a></li>
+        <li><a id="btnNews" href="news.html" title="New's Digest" >New's Digest</a></li>
+        <li><a id="btnImgur" href="#" title="Imgur" class="active" >Imgur</a></li>
+        <li><a id="btnFoodStorm" href="foodstorm.html" title="FoodStorm" >FoodStorm</a></li>
+        <li><a id="btnSnipp" href="snippator.html" title="Snippator" >Snippator</a></li>
+      </ul>
+    </div>
+
+    <div class="content" id="contentImgur">
+    </div>
+
+
+    <!-- Script -->
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/FeedEk.js"></script>
+    <script src="../js/masonery.js"></script>
+
+    <script>
+    $( document ).ready(function() {
+      //Flux Rss Igmur
+      $('#contentImgur').FeedEk({
+        FeedUrl: 'http://feeds.feedburner.com/ImgurGallery?format=xml',
+        MaxCount: 10
+      });
+    });
+    </script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
